@@ -29,7 +29,8 @@ struct ListingDetailView: View {
                                 .frame(width: 32, height: 32)
                             
                         }
-                        .padding(32)
+                        .padding(.top, 52)
+                        .padding(.leading, 32)
                 }
             }
 
