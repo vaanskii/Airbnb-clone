@@ -16,6 +16,7 @@
 		4FDDB75D2C4C046800CAB075 /* SearchAndFilterBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDB75C2C4C046800CAB075 /* SearchAndFilterBar.swift */; };
 		4FDDB75F2C4C0A9100CAB075 /* ListingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDB75E2C4C0A9100CAB075 /* ListingDetailView.swift */; };
 		4FDDB7622C4C0B6000CAB075 /* ListingImageCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDB7612C4C0B6000CAB075 /* ListingImageCarouselView.swift */; };
+		4FDDB7642C4C285900CAB075 /* DestinationSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDB7632C4C285900CAB075 /* DestinationSearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		4FDDB75C2C4C046800CAB075 /* SearchAndFilterBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAndFilterBar.swift; sourceTree = "<group>"; };
 		4FDDB75E2C4C0A9100CAB075 /* ListingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingDetailView.swift; sourceTree = "<group>"; };
 		4FDDB7612C4C0B6000CAB075 /* ListingImageCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingImageCarouselView.swift; sourceTree = "<group>"; };
+		4FDDB7632C4C285900CAB075 /* DestinationSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationSearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			children = (
 				4FDDB7582C4BF78C00CAB075 /* ExploreView.swift */,
 				4FDDB75C2C4C046800CAB075 /* SearchAndFilterBar.swift */,
+				4FDDB7632C4C285900CAB075 /* DestinationSearchView.swift */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FDDB7622C4C0B6000CAB075 /* ListingImageCarouselView.swift in Sources */,
+				4FDDB7642C4C285900CAB075 /* DestinationSearchView.swift in Sources */,
 				4FDDB73E2C4AFE7900CAB075 /* ContentView.swift in Sources */,
 				4FDDB75B2C4BFA1E00CAB075 /* ListingItemView.swift in Sources */,
 				4FDDB7592C4BF78D00CAB075 /* ExploreView.swift in Sources */,
