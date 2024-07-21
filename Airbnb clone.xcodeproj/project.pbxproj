@@ -19,6 +19,8 @@
 		4FDDB7642C4C285900CAB075 /* DestinationSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDB7632C4C285900CAB075 /* DestinationSearchView.swift */; };
 		4FDDB7662C4D9D0100CAB075 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDB7652C4D9D0100CAB075 /* ProfileView.swift */; };
 		4FDDB7682C4D9F9400CAB075 /* ProfileOptionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDB7672C4D9F9400CAB075 /* ProfileOptionRowView.swift */; };
+		4FDDB76A2C4DA1CE00CAB075 /* WishlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDB7692C4DA1CE00CAB075 /* WishlistView.swift */; };
+		4FDDB76C2C4DA31700CAB075 /* LoginButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDB76B2C4DA31700CAB075 /* LoginButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		4FDDB7632C4C285900CAB075 /* DestinationSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationSearchView.swift; sourceTree = "<group>"; };
 		4FDDB7652C4D9D0100CAB075 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		4FDDB7672C4D9F9400CAB075 /* ProfileOptionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOptionRowView.swift; sourceTree = "<group>"; };
+		4FDDB7692C4DA1CE00CAB075 /* WishlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistView.swift; sourceTree = "<group>"; };
+		4FDDB76B2C4DA31700CAB075 /* LoginButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +187,7 @@
 		4FDDB7572C4BF68100CAB075 /* Whishlits */ = {
 			isa = PBXGroup;
 			children = (
+				4FDDB7692C4DA1CE00CAB075 /* WishlistView.swift */,
 			);
 			path = Whishlits;
 			sourceTree = "<group>";
@@ -191,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				4FDDB7612C4C0B6000CAB075 /* ListingImageCarouselView.swift */,
+				4FDDB76B2C4DA31700CAB075 /* LoginButtonView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -269,9 +275,11 @@
 				4FDDB7662C4D9D0100CAB075 /* ProfileView.swift in Sources */,
 				4FDDB7682C4D9F9400CAB075 /* ProfileOptionRowView.swift in Sources */,
 				4FDDB7642C4C285900CAB075 /* DestinationSearchView.swift in Sources */,
+				4FDDB76C2C4DA31700CAB075 /* LoginButtonView.swift in Sources */,
 				4FDDB73E2C4AFE7900CAB075 /* ContentView.swift in Sources */,
 				4FDDB75B2C4BFA1E00CAB075 /* ListingItemView.swift in Sources */,
 				4FDDB7592C4BF78D00CAB075 /* ExploreView.swift in Sources */,
+				4FDDB76A2C4DA1CE00CAB075 /* WishlistView.swift in Sources */,
 				4FDDB75D2C4C046800CAB075 /* SearchAndFilterBar.swift in Sources */,
 				4FDDB75F2C4C0A9100CAB075 /* ListingDetailView.swift in Sources */,
 				4FDDB73C2C4AFE7900CAB075 /* Airbnb_cloneApp.swift in Sources */,
