@@ -18,18 +18,36 @@ struct DestinationSearchView: View {
     @Binding var show: Bool
     @State private var destination = ""
     @State private var selectedOptions: DestinationSearchOptions = .location
+    @State private var startDate = Date()
+    @State private var endDate = Date()
+    @State private var numGuests = 0
     
     var body: some View {
         VStack {
-            Button {
-                withAnimation(.snappy) {
-                    show.toggle()
+            HStack {
+                Button {
+                    withAnimation(.snappy) {
+                        show.toggle()
+                    }
+                } label: {
+                    Image(systemName: "xmark.circle")
+                        .imageScale(.large)
+                        .foregroundStyle(.black)
                 }
-            } label: {
-                Image(systemName: "xmark.circle")
-                    .imageScale(.large)
+                
+                Spacer()
+                
+                if !destination.isEmpty {
+                    Button("Clear") {
+                        destination = ""
+                    }
                     .foregroundStyle(.black)
+                    .font(.subheadline)
+                    .fontWeight(.semibold)
+                }
             }
+            .padding()
+            
             
             // Destination selection view
             VStack(alignment: .leading) {
@@ -53,15 +71,11 @@ struct DestinationSearchView: View {
                             .foregroundStyle(Color(.systemGray4))
                     }
                 } else {
-                    ColapsedPickerView(title: "Where", description: "Add destination")
+                    CollapsedPickerView(title: "Where", description: "Add destination")
                 }
             }
-            .padding()
+            .modifier(CollapsibleDestinationViewModifier())
             .frame(height: selectedOptions == .location ? 120 : 64)
-            .background(.white)
-            .clipShape(RoundedRectangle(cornerRadius: 12))
-            .padding()
-            .shadow(radius: 10)
             .onTapGesture {
                 withAnimation(.snappy) {
                     selectedOptions = .location
@@ -69,53 +83,61 @@ struct DestinationSearchView: View {
             }
             
             // Date selection view
-            VStack {
+            VStack(alignment: .leading) {
                 if selectedOptions == .dates {
-                    HStack {
-                        Text("Show extended view")
+                    Text("When's your trip?")
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                    
+                    VStack {
+                        DatePicker("From", selection: $startDate, displayedComponents: .date)
+                            .onTapGesture(count: 99) {}
                         
-                        Spacer()
+                        Divider()
+                        
+                        DatePicker("To", selection: $endDate, displayedComponents: .date)
+                            .onTapGesture(count: 99) {}
                     }
+                    .foregroundStyle(.gray)
+                    .font(.subheadline)
+                    .fontWeight(.semibold)
                 } else {
-                    ColapsedPickerView(title: "When", description: "Add dates")
+                    CollapsedPickerView(title: "When", description: "Add dates")
                 }
             }
-            .padding()
-            .frame(height: selectedOptions == .dates ? 120 : 64)
-            .background(.white)
-            .clipShape(RoundedRectangle(cornerRadius: 12))
-            .padding()
-            .shadow(radius: 10)
+            .modifier(CollapsibleDestinationViewModifier())
+            .frame(height: selectedOptions == .dates ? 180 : 64)
             .onTapGesture {
-                withAnimation(.snappy) {
-                    selectedOptions = .dates
-                }
+                withAnimation(.snappy) { selectedOptions = .dates }
             }
-            
             
             // num guests view
-            VStack {
+            VStack(alignment: .leading) {
                 if selectedOptions == .guests {
-                    HStack {
-                        Text("Show extended view")
-                        
-                        Spacer()
+                    Text("Who's coming?")
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                    
+                    Stepper {
+                        Text("\(numGuests) adults")
+                    } onIncrement: {
+                        numGuests += 1
+                    } onDecrement: {
+                        guard numGuests > 0 else { return }
+                        numGuests -= 1
                     }
                 } else {
-                    ColapsedPickerView(title: "Who", description: "Add guests")
+                    CollapsedPickerView(title: "Who", description: "Add guests")
                 }
             }
-            .padding()
+            .modifier(CollapsibleDestinationViewModifier())
             .frame(height: selectedOptions == .guests ? 120 : 64)
-            .background(.white)
-            .clipShape(RoundedRectangle(cornerRadius: 12))
-            .padding()
-            .shadow(radius: 10)
             .onTapGesture {
                 withAnimation(.snappy) {
                     selectedOptions = .guests
                 }
             }
+            Spacer()
         }
     }
 }
@@ -124,7 +146,18 @@ struct DestinationSearchView: View {
     DestinationSearchView(show: .constant(false))
 }
 
-struct ColapsedPickerView: View {
+struct CollapsibleDestinationViewModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .padding()
+            .background(.white)
+            .clipShape(RoundedRectangle(cornerRadius: 12))
+            .padding()
+            .shadow(radius: 10)
+    }
+}
+
+struct CollapsedPickerView: View {
     let title: String
     let description: String
     var body: some View {
