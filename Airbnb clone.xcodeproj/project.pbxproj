@@ -18,6 +18,7 @@
 		4FDDB7622C4C0B6000CAB075 /* ListingImageCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDB7612C4C0B6000CAB075 /* ListingImageCarouselView.swift */; };
 		4FDDB7642C4C285900CAB075 /* DestinationSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDB7632C4C285900CAB075 /* DestinationSearchView.swift */; };
 		4FDDB7662C4D9D0100CAB075 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDB7652C4D9D0100CAB075 /* ProfileView.swift */; };
+		4FDDB7682C4D9F9400CAB075 /* ProfileOptionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDB7672C4D9F9400CAB075 /* ProfileOptionRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		4FDDB7612C4C0B6000CAB075 /* ListingImageCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingImageCarouselView.swift; sourceTree = "<group>"; };
 		4FDDB7632C4C285900CAB075 /* DestinationSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationSearchView.swift; sourceTree = "<group>"; };
 		4FDDB7652C4D9D0100CAB075 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		4FDDB7672C4D9F9400CAB075 /* ProfileOptionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOptionRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				4FDDB7652C4D9D0100CAB075 /* ProfileView.swift */,
+				4FDDB7672C4D9F9400CAB075 /* ProfileOptionRowView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			files = (
 				4FDDB7622C4C0B6000CAB075 /* ListingImageCarouselView.swift in Sources */,
 				4FDDB7662C4D9D0100CAB075 /* ProfileView.swift in Sources */,
+				4FDDB7682C4D9F9400CAB075 /* ProfileOptionRowView.swift in Sources */,
 				4FDDB7642C4C285900CAB075 /* DestinationSearchView.swift in Sources */,
 				4FDDB73E2C4AFE7900CAB075 /* ContentView.swift in Sources */,
 				4FDDB75B2C4BFA1E00CAB075 /* ListingItemView.swift in Sources */,
