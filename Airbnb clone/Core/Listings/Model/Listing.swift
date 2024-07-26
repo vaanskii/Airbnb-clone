@@ -26,6 +26,7 @@ struct Listing: Identifiable, Codable {
     var rating: Double
     var features: [ListingFeatures]
     var amenities: [ListingAmenities]
+    let type: listingType
 }
 
 enum ListingFeatures: Int, Codable, Identifiable, Hashable {
