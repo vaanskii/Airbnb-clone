@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F6A33152C5696B60008DC05 /* Regions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6A33142C5696B60008DC05 /* Regions.swift */; };
 		4FDDB73C2C4AFE7900CAB075 /* Airbnb_cloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDB73B2C4AFE7900CAB075 /* Airbnb_cloneApp.swift */; };
 		4FDDB73E2C4AFE7900CAB075 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDB73D2C4AFE7900CAB075 /* ContentView.swift */; };
 		4FDDB7402C4AFE7B00CAB075 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FDDB73F2C4AFE7B00CAB075 /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F6A33142C5696B60008DC05 /* Regions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regions.swift; sourceTree = "<group>"; };
 		4FDDB7382C4AFE7900CAB075 /* Airbnb clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Airbnb clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FDDB73B2C4AFE7900CAB075 /* Airbnb_cloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airbnb_cloneApp.swift; sourceTree = "<group>"; };
 		4FDDB73D2C4AFE7900CAB075 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				4FDDB7772C5405D100CAB075 /* DeveloperPreview.swift */,
+				4F6A33142C5696B60008DC05 /* Regions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				4FDDB7742C53FAFB00CAB075 /* Listing.swift in Sources */,
 				4FDDB7592C4BF78D00CAB075 /* ExploreView.swift in Sources */,
 				4FDDB76A2C4DA1CE00CAB075 /* WishlistView.swift in Sources */,
+				4F6A33152C5696B60008DC05 /* Regions.swift in Sources */,
 				4FDDB7802C540B1200CAB075 /* ExploreViewModel.swift in Sources */,
 				4FDDB75D2C4C046800CAB075 /* SearchAndFilterBar.swift in Sources */,
 				4FDDB75F2C4C0A9100CAB075 /* ListingDetailView.swift in Sources */,
