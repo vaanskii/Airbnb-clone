@@ -54,6 +54,28 @@ class DeveloperPreview {
             features: [.SelfCheckIn, .superHost],
             amenities: [.pool, .wifi, .alarmSystem, .balcony, .laundry, .tv],
             type: .villa
-        )
+        ),
+        .init(
+            id: NSUUID().uuidString,
+            ownerUid: NSUUID().uuidString,
+            ownerName: "John Smith",
+            ownerImageUrl: "male-image",
+            numberOfBedrooms: 4,
+            numberOfBathrooms: 3,
+            numberOfGuests: 4,
+            numberOfBeds: 4,
+            pricePerNight: 467,
+            latiude: 25.7850,
+            longitude: -80.1936,
+            imageURLs: ["listing-4", "listing-2", "listing-1", "listing-3"],
+            addres: "124 Main ST",
+            city: "Los Angeles",
+            state: "California",
+            title: "Los Angeles Villa",
+            rating: 4.75,
+            features: [.SelfCheckIn, .superHost],
+            amenities: [.wifi, .alarmSystem, .balcony, .laundry, .tv],
+            type: .apartment
+        ),
     ]
 }
